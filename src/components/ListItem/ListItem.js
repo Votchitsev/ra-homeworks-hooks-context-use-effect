@@ -1,13 +1,13 @@
 import './ListItem.css';
 
-function ListItem({ name, listItemClickHandler, id }) {
+function ListItem({ name, listItemClickHandler, id, active }) {
 
   const onClickHandler = () => {
     listItemClickHandler(id, name);
   }
 
   return (
-    <div className="list-item" onClick={ onClickHandler }>{ name }</div>
+    <div className={ `list-item ${active ? "active": "" }` } onClick={ onClickHandler }>{ name }</div>
   )
 }
 

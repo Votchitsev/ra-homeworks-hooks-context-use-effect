@@ -19,8 +19,12 @@ function App() {
 
   return (
     <div className="App">
-      <List list={ list } listItemClickHandler={ listItemClickHandler }/>
-      { activeUser ? <Details info={ activeUser } /> : null } 
+      <List 
+        list={ list } 
+        listItemClickHandler={ listItemClickHandler }
+        activeId={ activeUser ? activeUser.id : null }/>
+        { activeUser ? <Details info={ activeUser } 
+      /> : null } 
     </div>
   );
 }

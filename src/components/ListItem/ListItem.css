@@ -7,3 +7,11 @@
 .list-item:hover {
   background-color: rgb(238, 229, 229);
 }
+
+.active {
+  background-color: blueviolet;
+}
+
+.active:hover {
+  background-color: blueviolet;
+}

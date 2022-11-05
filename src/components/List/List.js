@@ -1,7 +1,7 @@
 import './List.css';
 import ListItem from '../ListItem/ListItem';
 
-function List({ list, listItemClickHandler }) {
+function List({ list, listItemClickHandler, activeId }) {
 
   return (
     <div className='list'>
@@ -9,6 +9,7 @@ function List({ list, listItemClickHandler }) {
         name={ item.name } 
         key={ item.id }
         id={ item.id }
+        active={ activeId === item.id }
         listItemClickHandler={ listItemClickHandler } />) }
     </div>
   )
