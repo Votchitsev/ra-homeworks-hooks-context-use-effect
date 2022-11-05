@@ -1,0 +1,19 @@
+img {
+  width: 100%;
+}
+
+.details {
+  width: 50%;
+}
+
+.details-name {
+  font-size: 1.5em;
+  padding: 10px;
+  border: 1px solid rgb(230, 224, 224);; 
+}
+
+.details-info {
+  padding: 10px;
+  border: 1px solid rgb(230, 224, 224);
+  border-top: none;
+}
