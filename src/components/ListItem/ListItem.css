@@ -1,0 +1,9 @@
+.list-item {
+  padding: 10px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+.list-item:hover {
+  background-color: rgb(238, 229, 229);
+}
